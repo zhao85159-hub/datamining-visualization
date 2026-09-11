@@ -1,0 +1,380 @@
+{
+  "postings": 123849,
+  "companies": 24473,
+  "skills": 35,
+  "job_skills": 205778,
+  "specialities": 169387,
+  "users": 2,
+  "remote": 15246,
+  "with_salary": 35560,
+  "with_company": 122131,
+  "with_desc": 123842,
+  "remote_ratio": 0.1231,
+  "salary_coverage": 0.2871,
+  "salary": {
+    "n": 35560,
+    "min": 10000.0,
+    "max": 500000.0,
+    "mean": 95692.28629007311,
+    "median": 82500.0,
+    "p25": 52000.0,
+    "p75": 125000.0
+  },
+  "avg_salary": 95692.29,
+  "work_type": [
+    {
+      "name": "Full-time",
+      "value": 98814
+    },
+    {
+      "name": "Contract",
+      "value": 12117
+    },
+    {
+      "name": "Part-time",
+      "value": 9696
+    },
+    {
+      "name": "Temporary",
+      "value": 1190
+    },
+    {
+      "name": "Internship",
+      "value": 983
+    },
+    {
+      "name": "Volunteer",
+      "value": 562
+    },
+    {
+      "name": "Other",
+      "value": 487
+    }
+  ],
+  "experience": [
+    {
+      "name": "Mid-Senior level",
+      "value": 41489
+    },
+    {
+      "name": "Entry level",
+      "value": 36708
+    },
+    {
+      "name": "Unknown",
+      "value": 29409
+    },
+    {
+      "name": "Associate",
+      "value": 9826
+    },
+    {
+      "name": "Director",
+      "value": 3746
+    },
+    {
+      "name": "Internship",
+      "value": 1449
+    },
+    {
+      "name": "Executive",
+      "value": 1222
+    }
+  ],
+  "category": [
+    {
+      "name": "Other",
+      "value": 49215
+    },
+    {
+      "name": "Healthcare",
+      "value": 15203
+    },
+    {
+      "name": "Sales & Business",
+      "value": 10703
+    },
+    {
+      "name": "Finance & Accounting",
+      "value": 9386
+    },
+    {
+      "name": "Operations & Logistics",
+      "value": 9187
+    },
+    {
+      "name": "Marketing",
+      "value": 7259
+    },
+    {
+      "name": "Software Engineering",
+      "value": 4966
+    },
+    {
+      "name": "IT & Infrastructure",
+      "value": 3421
+    },
+    {
+      "name": "Product & Project Management",
+      "value": 3223
+    },
+    {
+      "name": "Human Resources",
+      "value": 3084
+    },
+    {
+      "name": "Customer Service",
+      "value": 2385
+    },
+    {
+      "name": "Education",
+      "value": 2181
+    },
+    {
+      "name": "Data & Analytics",
+      "value": 1896
+    },
+    {
+      "name": "Design",
+      "value": 1740
+    }
+  ],
+  "locations": [
+    {
+      "name": "United States",
+      "value": 8125
+    },
+    {
+      "name": "New York, NY",
+      "value": 2756
+    },
+    {
+      "name": "Chicago, IL",
+      "value": 1834
+    },
+    {
+      "name": "Houston, TX",
+      "value": 1762
+    },
+    {
+      "name": "Dallas, TX",
+      "value": 1383
+    },
+    {
+      "name": "Atlanta, GA",
+      "value": 1363
+    },
+    {
+      "name": "Boston, MA",
+      "value": 1176
+    },
+    {
+      "name": "Austin, TX",
+      "value": 1083
+    },
+    {
+      "name": "Charlotte, NC",
+      "value": 1075
+    },
+    {
+      "name": "Phoenix, AZ",
+      "value": 1059
+    },
+    {
+      "name": "Washington, DC",
+      "value": 985
+    },
+    {
+      "name": "Los Angeles, CA",
+      "value": 972
+    }
+  ],
+  "companies_top": [
+    {
+      "name": "Liberty Healthcare and Rehabilitation Services",
+      "value": 1108
+    },
+    {
+      "name": "The Job Network",
+      "value": 1003
+    },
+    {
+      "name": "J. Galt",
+      "value": 604
+    },
+    {
+      "name": "TEKsystems",
+      "value": 529
+    },
+    {
+      "name": "Lowe's Companies, Inc.",
+      "value": 527
+    },
+    {
+      "name": "Ingersoll Rand",
+      "value": 517
+    },
+    {
+      "name": "Capital One",
+      "value": 496
+    },
+    {
+      "name": "Cogent Communications",
+      "value": 476
+    },
+    {
+      "name": "Insight Global",
+      "value": 418
+    },
+    {
+      "name": "Dice",
+      "value": 415
+    }
+  ],
+  "top_skills": [
+    {
+      "name": "Information Technology",
+      "value": 25256
+    },
+    {
+      "name": "Sales",
+      "value": 21193
+    },
+    {
+      "name": "Management",
+      "value": 20385
+    },
+    {
+      "name": "Manufacturing",
+      "value": 17728
+    },
+    {
+      "name": "Health Care Provider",
+      "value": 16675
+    },
+    {
+      "name": "Business Development",
+      "value": 13304
+    },
+    {
+      "name": "Engineering",
+      "value": 12530
+    },
+    {
+      "name": "Other",
+      "value": 12314
+    },
+    {
+      "name": "Finance",
+      "value": 8011
+    },
+    {
+      "name": "Marketing",
+      "value": 5400
+    },
+    {
+      "name": "Accounting/Auditing",
+      "value": 4999
+    },
+    {
+      "name": "Administrative",
+      "value": 4787
+    },
+    {
+      "name": "Customer Service",
+      "value": 4167
+    },
+    {
+      "name": "Project Management",
+      "value": 3825
+    },
+    {
+      "name": "Analyst",
+      "value": 3775
+    }
+  ],
+  "salary_by_category": [
+    {
+      "name": "Data & Analytics",
+      "avg": 142579.16,
+      "n": 614
+    },
+    {
+      "name": "Software Engineering",
+      "avg": 140671.4,
+      "n": 1233
+    },
+    {
+      "name": "Product & Project Management",
+      "avg": 129335.55,
+      "n": 1107
+    },
+    {
+      "name": "IT & Infrastructure",
+      "avg": 114505.94,
+      "n": 968
+    },
+    {
+      "name": "Finance & Accounting",
+      "avg": 103863.26,
+      "n": 3522
+    },
+    {
+      "name": "Healthcare",
+      "avg": 101858.41,
+      "n": 3472
+    },
+    {
+      "name": "Design",
+      "avg": 100725.46,
+      "n": 598
+    },
+    {
+      "name": "Marketing",
+      "avg": 93665.08,
+      "n": 2185
+    },
+    {
+      "name": "Other",
+      "avg": 90687.32,
+      "n": 14025
+    },
+    {
+      "name": "Sales & Business",
+      "avg": 90357.13,
+      "n": 2728
+    },
+    {
+      "name": "Human Resources",
+      "avg": 81321.02,
+      "n": 1358
+    },
+    {
+      "name": "Operations & Logistics",
+      "avg": 78481.49,
+      "n": 2614
+    }
+  ],
+  "cooc_skills": [
+    "Information Technology",
+    "Sales",
+    "Management",
+    "Manufacturing",
+    "Health Care Provider",
+    "Business Development",
+    "Engineering",
+    "Other",
+    "Finance",
+    "Marketing",
+    "Accounting/Auditing",
+    "Administrative"
+  ],
+  "date_min": "2024-03-24 21:50:14.000000",
+  "date_max": "2024-04-20 00:26:56.000000",
+  "completeness": {
+    "Company link": 98.6,
+    "Description": 100.0,
+    "Salary": 28.7,
+    "Remote flag": 12.3
+  }
+}

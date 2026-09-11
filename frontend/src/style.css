@@ -1,0 +1,238 @@
+/* ============================================================
+   Graduate Recruitment Platform — blue Element-UI admin design
+   language. Modelled on the reference screenshots: top blue bar +
+   left vertical menu + gradient stat cards + white cards + clean
+   tables + bright, colourful charts.
+   Legacy CSS variable names are kept so component scoped styles
+   keep working; only the values are swapped.
+   ============================================================ */
+
+:root {
+  /* Fonts — sans-serif (Element-UI look) */
+  --serif: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  /* Primary — Element blue */
+  --accent: #409eff;
+  --accent-700: #337ecc;
+  --accent-600: #3a8ee6;
+  --accent-soft: #ecf5ff;
+  --accent-line: #d9ecff;
+  --brand: #409eff;
+  --brand-2: #66b1ff;
+
+  /* Secondary — warm amber (formerly clay) */
+  --clay: #e6a23c;
+  --clay-soft: #fdf6ec;
+
+  /* Text grey ramp (formerly ink ramp) */
+  --ink-900: #1f2d3d;
+  --ink-800: #303133;
+  --ink-700: #475669;
+  --ink-600: #5a6a7a;
+  --ink-500: #909399;
+  --ink-400: #a8abb2;
+  --ink-300: #c0c4cc;
+
+  /* Surfaces */
+  --canvas: #f0f2f5;
+  --surface: #ffffff;
+  --surface-2: #fafafa;
+  --line: #ebeef5;
+  --line-strong: #dcdfe6;
+  --ink-rule: #ebeef5;
+
+  /* Categorical data palette */
+  --c1: #5b8ff9; --c2: #5ad8a6; --c3: #9270ca;
+  --c4: #f6bd16; --c5: #e8684a; --c6: #6dc8ec;
+
+  /* Semantic colours */
+  --ok: #67c23a; --ok-soft: #f0f9eb;
+  --warn: #e6a23c; --danger: #f56c6c; --star: #f7ba2a;
+
+  /* Shape */
+  --r: 8px; --r-sm: 4px; --r-lg: 12px;
+  --shadow: 0 1px 8px rgba(0, 21, 41, 0.06);
+  --shadow-card: 0 1px 8px rgba(0, 21, 41, 0.06);
+  --shadow-pop: 0 8px 24px rgba(0, 21, 41, 0.12);
+
+  /* Layout dimensions */
+  --topbar-h: 56px;
+  --side-w: 220px;
+
+  /* Element Plus — keep its default blue as the primary colour */
+  --el-color-primary: #409eff;
+  --el-border-radius-base: 4px;
+  --el-font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body, #app { height: 100%; margin: 0; }
+
+body {
+  font-family: var(--sans);
+  background: var(--canvas);
+  color: var(--ink-800);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.tnum, .mono { font-variant-numeric: tabular-nums; }
+.mono { font-family: var(--mono); }
+
+/* ============================================================
+   Public layout: top blue Topbar
+   ============================================================ */
+.app-shell { min-height: 100vh; }
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0; height: var(--topbar-h);
+  background: linear-gradient(90deg, #409eff, #4d9bff);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 20px; z-index: 1000; color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.12);
+}
+.topbar .brand { display: flex; align-items: center; gap: 12px; cursor: pointer; }
+.topbar .logo {
+  width: 34px; height: 34px; border-radius: 8px; flex-shrink: 0;
+  display: grid; place-items: center; font-size: 18px; font-weight: 700;
+  background: rgba(255, 255, 255, 0.18); color: #fff;
+}
+.topbar .wordmark { font-size: 18px; font-weight: 700; letter-spacing: 0.5px; color: #fff; line-height: 1; }
+.topbar .top-nav { display: flex; align-items: center; gap: 4px; margin-left: 26px; }
+.topbar .top-nav a {
+  color: rgba(255, 255, 255, 0.92); font-size: 14px; padding: 6px 12px;
+  border-radius: 6px; text-decoration: none; transition: background 0.15s;
+}
+.topbar .top-nav a:hover, .topbar .top-nav a.router-link-active { background: rgba(255, 255, 255, 0.18); color: #fff; }
+
+.topbar .account { display: flex; align-items: center; gap: 12px; }
+.topbar .who { display: flex; align-items: center; gap: 8px; cursor: pointer; padding: 5px 10px; border-radius: 6px; transition: background 0.15s; }
+.topbar .who:hover { background: rgba(255, 255, 255, 0.16); }
+.topbar .avatar { width: 28px; height: 28px; border-radius: 50%; background: rgba(255, 255, 255, 0.22); display: grid; place-items: center; font-size: 13px; font-weight: 600; }
+.topbar .who-name { font-size: 14px; color: #fff; font-weight: 500; }
+.topbar .who-role { font-size: 11px; color: rgba(255, 255, 255, 0.78); }
+.topbar .top-btn { background: rgba(255,255,255,0.16); border: none; color: #fff; cursor: pointer; font-size: 13px; padding: 6px 12px; border-radius: 6px; }
+.topbar .top-btn:hover { background: rgba(255,255,255,0.28); }
+
+/* ============================================================
+   Public layout: left Sidebar menu
+   ============================================================ */
+.sidebar {
+  position: fixed; top: var(--topbar-h); left: 0; bottom: 0; width: var(--side-w);
+  background: #fff; border-right: 1px solid var(--line);
+  padding: 14px 0; overflow-y: auto; z-index: 900;
+}
+.side-group { font-size: 12px; color: var(--ink-400); padding: 12px 22px 6px; letter-spacing: 0.5px; }
+.side-link {
+  display: flex; align-items: center; gap: 11px; padding: 11px 22px;
+  color: var(--ink-700); font-size: 14px; text-decoration: none;
+  border-left: 3px solid transparent; transition: all 0.15s; cursor: pointer;
+}
+.side-link:hover { background: var(--accent-soft); color: var(--accent); }
+.side-link.active { background: var(--accent); color: #fff; border-left-color: #337ecc; font-weight: 500; }
+.side-link .el-icon { font-size: 17px; }
+
+/* ============================================================
+   Content area
+   ============================================================ */
+.app-content { margin-left: var(--side-w); padding-top: var(--topbar-h); min-height: 100vh; }
+.page { padding: 24px 28px 48px; max-width: 1320px; margin: 0 auto; }
+
+/* Page header */
+.page-head { margin: 0 0 22px; }
+.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; color: var(--accent); text-transform: uppercase; }
+.page-title { font-size: 24px; font-weight: 700; margin: 6px 0 0; color: var(--ink-900); line-height: 1.25; font-family: var(--sans); }
+.page-sub { margin: 8px 0 0; color: var(--ink-500); font-size: 14px; max-width: 90ch; line-height: 1.6; }
+
+.section-title { font-size: 15px; font-weight: 600; color: var(--ink-800); margin: 26px 0 14px; padding-left: 11px; border-left: 3px solid var(--accent); }
+
+/* ============================================================
+   Cards
+   ============================================================ */
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); box-shadow: var(--shadow-card); padding: 18px 20px; }
+.card > h3 {
+  margin: -18px -20px 16px; padding: 14px 20px; font-size: 15px; font-weight: 600; color: var(--ink-800);
+  border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 10px;
+}
+.card > h3:last-child { margin-bottom: -18px; }
+.card > h3 .idx {
+  display: inline-flex; align-items: center; font-size: 12px; font-weight: 600;
+  color: var(--accent); background: var(--accent-soft); padding: 2px 8px; border-radius: 4px;
+}
+.card .chart { margin: 0 -4px; }
+
+/* Chart grid */
+.chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 18px; }
+.chart-grid > .card { box-shadow: var(--shadow-card); }
+.chart { width: 100%; height: 320px; }
+
+/* ============================================================
+   Stat cards (gradient) — global fallback; StatCard.vue has scoped styles
+   ============================================================ */
+.stat-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 18px; }
+
+/* ============================================================
+   Alerts / banners
+   ============================================================ */
+.alert-success {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  background: var(--ok-soft); border: 1px solid #e1f3d8; color: #529b2e;
+  padding: 11px 16px; border-radius: var(--r-sm); font-size: 14px; margin-bottom: 20px;
+}
+.alert-success .close { cursor: pointer; color: var(--ink-400); font-size: 18px; background: none; border: none; line-height: 1; }
+.lede-note { background: var(--accent-soft); border-left: 3px solid var(--accent); padding: 12px 16px; border-radius: 0 var(--r-sm) var(--r-sm) 0; font-size: 13.5px; color: var(--ink-700); }
+
+/* ============================================================
+   Element Plus tweaks (its default is already #409eff blue —
+   only minor polish here)
+   ============================================================ */
+.el-table { --el-table-border-color: var(--line); --el-table-header-bg-color: var(--surface-2); font-size: 14px; }
+.el-table th.el-table__cell { background: var(--surface-2) !important; color: var(--ink-600); font-weight: 600; }
+.el-table td.el-table__cell { color: var(--ink-700); }
+.el-table__row { cursor: pointer; }
+.el-table--enable-row-hover .el-table__body tr:hover > td.el-table__cell { background: var(--accent-soft); }
+
+.el-button { font-weight: 500; }
+.el-card, .el-message-box, .el-dropdown-menu { border-radius: var(--r); }
+.el-pagination { --el-pagination-font-size: 13px; }
+
+/* ============================================================
+   Utilities
+   ============================================================ */
+.muted { color: var(--ink-500); font-size: 13px; }
+.flex { display: flex; align-items: center; }
+.between { justify-content: space-between; }
+a { color: var(--accent); text-decoration: none; transition: color 0.15s; }
+a:hover { color: var(--accent-700); }
+
+/* ============================================================
+   Transitions / motion
+   ============================================================ */
+.fade-enter-active, .fade-leave-active { transition: opacity 0.2s ease; }
+.fade-enter-from, .fade-leave-to { opacity: 0; }
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.rise { animation: rise 0.4s ease both; }
+
+/* ============================================================
+   Responsive: collapse the sidebar on narrow screens
+   ============================================================ */
+.menu-toggle { display: none; width: 34px; height: 34px; place-items: center; margin-right: 6px; background: rgba(255,255,255,0.18); border: none; border-radius: 8px; color: #fff; cursor: pointer; font-size: 18px; }
+@media (max-width: 860px) {
+  .sidebar { transform: translateX(-100%); transition: transform 0.2s; }
+  .sidebar.open { transform: translateX(0); box-shadow: var(--shadow-pop); }
+  .app-content { margin-left: 0; }
+  .topbar .top-nav { display: none; }
+  .topbar .wordmark { font-size: 16px; }
+  .menu-toggle { display: grid; }
+}
+
+/* ============================================================
+   Scrollbar
+   ============================================================ */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: #c8ccd4; border-radius: 6px; border: 2px solid var(--canvas); }
+::-webkit-scrollbar-thumb:hover { background: var(--ink-300); }
+::-webkit-scrollbar-track { background: transparent; }

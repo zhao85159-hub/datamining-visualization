@@ -1,0 +1,82 @@
+[
+  {
+    "endpoint": "GET /api/postings?page=1&size=20",
+    "status": 200,
+    "cold_ms": 30.5,
+    "avg_ms": 22.2,
+    "min_ms": 21.0,
+    "max_ms": 24.8
+  },
+  {
+    "endpoint": "GET /api/postings?q=engineer&size=20",
+    "status": 200,
+    "cold_ms": 36.3,
+    "avg_ms": 27.1,
+    "min_ms": 26.6,
+    "max_ms": 27.7
+  },
+  {
+    "endpoint": "GET /api/postings/921716",
+    "status": 200,
+    "cold_ms": 7.3,
+    "avg_ms": 3.6,
+    "min_ms": 3.3,
+    "max_ms": 4.0
+  },
+  {
+    "endpoint": "GET /api/companies?size=20",
+    "status": 200,
+    "cold_ms": 48.5,
+    "avg_ms": 12.6,
+    "min_ms": 12.0,
+    "max_ms": 13.6
+  },
+  {
+    "endpoint": "GET /api/skills",
+    "status": 200,
+    "cold_ms": 295.4,
+    "avg_ms": 0.4,
+    "min_ms": 0.3,
+    "max_ms": 0.6
+  },
+  {
+    "endpoint": "GET /api/analytics/dashboard",
+    "status": 200,
+    "cold_ms": 1044.0,
+    "avg_ms": 0.4,
+    "min_ms": 0.3,
+    "max_ms": 0.5
+  },
+  {
+    "endpoint": "GET /api/analytics/salary",
+    "status": 200,
+    "cold_ms": 3338.8,
+    "avg_ms": 0.3,
+    "min_ms": 0.3,
+    "max_ms": 0.5
+  },
+  {
+    "endpoint": "GET /api/analytics/skills-matrix",
+    "status": 200,
+    "cold_ms": 1459.2,
+    "avg_ms": 0.3,
+    "min_ms": 0.3,
+    "max_ms": 0.5
+  },
+  {
+    "endpoint": "POST /api/analytics/classify",
+    "status": 200,
+    "cold_ms": 752.4,
+    "avg_ms": 1.7,
+    "min_ms": 1.6,
+    "max_ms": 1.9
+  },
+  {
+    "endpoint": "POST /api/skills/extract",
+    "status": 200,
+    "cold_ms": 0.5,
+    "avg_ms": 0.4,
+    "min_ms": 0.4,
+    "max_ms": 0.5
+  }
+]
